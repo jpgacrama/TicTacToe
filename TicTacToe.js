@@ -17,6 +17,7 @@ class Board extends React.Component {
 
   handleClick(i) {
     const squares = this.state.squares.slice();
+    // This is the logic which allows the next player to select a square
     squares[i] = this.state.xIsNext ? 'X' : 'O';
     this.setState({
       squares: squares,
